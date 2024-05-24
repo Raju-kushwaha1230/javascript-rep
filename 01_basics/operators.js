@@ -19,4 +19,20 @@ console.log(29=='29'); //true cause == operator just check the value only not ty
 console.log(29!=='29');//false 
 console.log(29!==34); //true
 
+//logical operator 
+/*
+logical And (&&)-----
+true if the both of the operands / boolean values are true else evaluates to false 
 
+
+logical or (||)
+true if either   of the operands / boolean values are true else evaluates to false 
+
+
+logical Not (!)
+*/
+
+const a=true
+const b=false , c=4
+
+console.log(a && b)
