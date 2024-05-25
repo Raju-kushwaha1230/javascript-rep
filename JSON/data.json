@@ -1,0 +1,7 @@
+{
+    "name": "Raju",
+    "age":21 ,
+    "email" :"mighty@gmail.com",
+    "hobbies" : ["reading ", "coding", "cooking"],
+    "address":"hyderabad"
+}

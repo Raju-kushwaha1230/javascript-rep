@@ -30,9 +30,31 @@ true if either   of the operands / boolean values are true else evaluates to fal
 
 
 logical Not (!)
+true if the operands is false and vice-versa 
 */
 
 const a=true
 const b=false , c=4
 
-console.log(a && b)
+console.log(a && b) //false 
+console.log(c>2 && c!=4) // false 
+
+console.log(a || b) //true
+console.log(c>10 || c==4) ///true
+console.log(c>10 || c==20) //false
+
+console.log(!a)
+console.log(a !=b) //true
+console.log(c!=4) // false
+console.log(c!=20) // true
+
+
+let password = "mighty@123"
+
+if (password.length>=8 && password.includes('@','mighty',1,'raju')){
+    console.log('valide pasword')
+}else{
+    console.log('Invalid password')
+}
+
+
