@@ -11,3 +11,6 @@ global scope variable are those decalred outside of a block
 local scope variable are those declarred inside of block.
  
 --------------------------------------
+
+
+Destructuring allows us to "unpack" values from data-structure (Array, objects) into separate distinct variables 
