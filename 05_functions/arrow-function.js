@@ -19,3 +19,5 @@ console.log(double(10))
 
 const double1 = num => num *2;
 console.log(double1(10))
+
+

@@ -17,3 +17,12 @@ function user(name,age,work){
 }
 const mighty = user('raju',21,'programmer')
 console.log(mighty.intro())
+ 
+
+var lib = {
+    sum :  (a, b) => a+b,
+    mul:  (a, b) => a*b
+};
+
+console.log(lib.sum(20,30))
+console.log(lib.mul(20,2))

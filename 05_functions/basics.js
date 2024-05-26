@@ -29,3 +29,23 @@ const greetings = function (user){
 
 greetings('mighty');
 
+
+function countto(count){
+    if(count == true){
+        console.log('count');
+        for (let i=0; i < 5; i++){
+            console.log(`count ${i}`);
+        }
+    }
+}
+countto(true)
+
+function rating (rate = 0){ //default paramenter value is 0 
+    if (rate ===5){
+        console.log('Hogh Rating :)')
+
+    }else if ( rate ===0 || rate<3){
+        console.log("low rating :(")
+    }
+}
+rating(2)
