@@ -145,3 +145,16 @@ function showOption({tittle ='untittle',width:w=100,height:h=200,items:[item1,it
 showOption(options)
 
 
+//nested destructuring
+
+const songs =[
+    {name:'payphone', singer: 'smith' ,duration: 3.45},
+    {name:'fame of god ', singer: 'mighty' ,duration: 4.45},
+    {name1:'blank space', singer: 'james aurther' ,duration: 4},
+    {name:'train wreck', singer: 'james' ,duration: 3.45},
+    {name:'empty space', singer: 'james aurthor' ,duration: 3.45},
+    
+]
+const [, ,{ name1:m,singer: sh,duration}] = songs
+console.log(m)
+console.log(sh)
