@@ -109,3 +109,42 @@ function person (firstName,lastName,...hobies){
     console.log(hobies)
 }
 person('raju','kushwaha','playing guitar','singing', 'coding ', 'camping')
+
+
+
+
+/*
+The ternary operator in javascript is a concise way of writing conditional expression.
+it is the only javascript operator that tales three oprands : a condition followed by a question mark (?)
+an expression to execute of the condition is true , follwed by a cplpo (:)
+and an expression to execute if the condition is false .
+condition ? exprIfTrue : exprIfFalse ;
+*/
+
+let pasword = 2;
+
+function passwordChecker (ps){
+  // if (ps === 8){
+  //   return 'strong password';
+  // }
+  // else{
+  //   return "password should be 8 character ";
+
+  // }
+  return (ps ===8) ? "strong password " : "password should be 8 character"
+  }
+console.log(passwordChecker(password))
+
+
+
+const age =34;
+const isAdult = age >= 18 ? "Adult" : "teanager";
+console.log(isAdult)
+
+const isAdul = (age) => age <=18 ? "Teanager " : "Adult" ;
+console.log(isAdul(12))
+
+let money = true
+const Havemoney = money ==true ? "Buy product" : "Ther should bring money"
+console.log(Havemoney)
+
