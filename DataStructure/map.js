@@ -1,16 +1,20 @@
 /**
- * Map is a built-in data structure introduced in (ES6) that allow you to store
+Map is a built-in data structure introduced in (ES6) that allow you to store
   key-value pairs where both the keys and values can be of any data type. It is
   similar to an object , but eith a few key differences:
- --> Keys can be of any data type : Unlike objects, where keys are limited to strings and symbols , map allows you to use any data type as keys, including 
+
+
+--> Keys can be of any data type : Unlike objects, where keys are limited to strings and symbols , map allows you to use any data type as keys, including 
  numbers, booleans ,  objects, and even other map instances.
 
- --> Maintains insertion order : Map preserves the order od key-value pairs as
+
+--> Maintains insertion order : Map preserves the order od key-value pairs as
  they were inserted , while object keys may not be guaranteed to be in a specific order.
 
- --> Interation : Map provides built-in methods for easy iteration over its elements.
 
- *  */
+--> Interation : Map provides built-in methods for easy iteration over its elements.
+
+*/
 
 const map = new Map();
 

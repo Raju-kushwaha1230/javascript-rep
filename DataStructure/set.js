@@ -7,6 +7,4 @@
  set object are useful when you need to store a list of unique elements
  and quickly check for the existence of a specific value.
 
-
-
  */
