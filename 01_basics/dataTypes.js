@@ -7,5 +7,4 @@ and one non primtive data types ver  .
 let num=23  //number
 let name="mighty" //string
 let sal=BigInt(23948343289)
-let 
 console.log(typeof(name))

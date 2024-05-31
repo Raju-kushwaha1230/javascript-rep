@@ -8,3 +8,30 @@
  and quickly check for the existence of a specific value.
 
  */
+
+ const initialValue = [1,2,3,2,2,2,2]
+const mySet = new Set(initialValue);
+ //set works in unique value and if there is duplicate value then it will automatically remove it just like this code
+mySet.add('mighty') // adding the new property using add method
+
+console.log(mySet)
+console.log(mySet.has('mighty')) //true
+console.log(mySet.has('raju')) //false
+
+mySet.delete(2) //it will only remove perticular property
+// mySet.clear();//it will remove all the set property 
+console.log(mySet)
+
+for (let key of mySet){
+    console.log(key)
+}
+
+const MyLetter = new Set()
+MyLetter.add('a')
+MyLetter.add('b')
+MyLetter.add('c')
+
+console.log(MyLetter)
+for (let key of MyLetter){
+    console.log(key)
+}
