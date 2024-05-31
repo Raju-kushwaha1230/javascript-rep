@@ -32,3 +32,7 @@ console.log(fruit.join('-'))
 console.log(fruit.reverse())
 console.log(fruits.slice(0,2))
 console.log(fruit.sort())
+
+
+
+
