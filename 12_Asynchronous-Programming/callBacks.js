@@ -9,3 +9,25 @@ function fetchData(callback){
 console.log('start');
 fetchData(()=> console.log('done'));
 console.log('end')
+
+//ex--- task queue 
+
+function proceeOrder(orderId,callback){
+    console.log(`processing id #${orderId}`);
+    setTimeout(() => {
+        console.log(`task completed #${orderId}`);
+        callback();
+    }, 2000);
+}
+
+console.log('start')
+proceeOrder(1,()=>{ // calling another fucntion as argument of procesOrder
+    proceeOrder(2,()=> {
+        proceeOrder(3,()=>{
+            console.log("order processed !")
+        })
+    })
+
+})
+
+console.log('end')

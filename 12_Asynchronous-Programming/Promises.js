@@ -20,9 +20,9 @@ promise
 
 console.log('end')
 
-
+//===============================================================================
 //Handling Multiple Async Tasks
-
+//====================================================================================
 //a. Promise.all
 //Waits for all Promises to resolve or rejects if any Promise fails.
 
@@ -36,13 +36,64 @@ const promis2 = new Promise((resolve)=>{
     }, 2000);
 })
 
-// Promise.all([promis1,promis2]).then((result) =>{
-//     console.log(result);
-// })
-
+Promise.all([promis1,promis2]).then((result) =>{
+    console.log(result);
+})
+//-------------------------------------------------------------------------------
 //b. Promise.race
 //Returns the result of the first Promise that resolves or rejects.
 
 Promise.race([promis1, promis2]).then((result) => {
     console.log(result);
 })
+
+const prom1= new Promise((resolve,reject)=>{
+    setTimeout(() => {
+        resolve("data 1");
+    }, 1000);
+})
+const prom2 = new Promise((resolve,reject)=> {
+    setTimeout(() => {
+        resolve('data 2');
+    }, 2000);
+})
+
+Promise.race([prom1, prom2]).then((result)=>{
+    console.log(result);
+})
+
+//Handling Multiple Async Tasks Using Promise.all
+
+function fetchData(id){
+    return new Promise((resolve)=>{
+        setTimeout(() => {
+            resolve(`user id is ${id}`)
+        }, 2000);
+    });
+}
+
+Promise.all([fetchData(1),fetchData(2),fetchData(3)]).then((result)=>{
+    console.log(result)
+})
+
+//using Promise.race
+
+function fetchFasterAPI(){
+    return new Promise((resolve)=>{
+        setTimeout(() => {
+            resolve("fastest api response")
+        }, 1000);
+    })
+}
+
+function fetchSlowAPI(){
+    return new Promise((resolve)=>{
+        setTimeout(() => {
+            resolve("slowest api")
+        }, 3000);
+    })
+}
+
+Promise.race([fetchSlowAPI(),fetchFasterAPI()]).then((result)=>{
+    console.log('race result :',result);
+});

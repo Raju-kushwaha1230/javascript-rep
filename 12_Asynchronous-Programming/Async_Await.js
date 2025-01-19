@@ -21,3 +21,23 @@ async function process() {
     console.log('end');
 }
 process();
+
+// ex---file download simulation
+
+function fileDownload(file){
+    return new Promise((resolve)=>{
+        console.log(`downloading ${file}`);
+        setTimeout(() => {
+            resolve(`${file} downloaded`);
+        }, 2000);
+    })
+}
+
+async function downloadAll() {
+    console.log('start downloading');
+    const file1 = await fileDownload('music.mp3');
+    console.log(file1)
+    const file2 = await fileDownload('music.app');
+    console.log(file2)
+}
+downloadAll();

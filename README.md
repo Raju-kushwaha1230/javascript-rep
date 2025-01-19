@@ -65,3 +65,16 @@ await makes a function wait for a Promise
 a. Promise.all
 -------
 Waits for all Promises to resolve or rejects if any Promise fails.
+
+---------------------------
+b. Promise.race
+--------------------------------
+Returns the result of the first Promise that resolves or rejects.
+
+4.Error Handling in Async Code
+=========================
+a. Using .catch with Promises
+------------------------------
+b. Using try/catch with Async/Await
+---------------------------------
+
