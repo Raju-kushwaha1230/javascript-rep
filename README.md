@@ -21,17 +21,20 @@ Synchronous vs. Asynchronous
 ------------------------------------------------
 Synchronous: Code is executed line by line, waiting for each line to complete before moving to the next. This can block execution.
 Ex.......
+```
 console.log("Start");
 console.log("Middle");
 console.log("End");
+```
 
 ------------------------------------------------
 Asynchronous: Code initiates a task and moves to the next one, allowing other operations to run. The result of the asynchronous task is handled later.
 Ex....................
-
+```
 console.log("Start");
 setTimeout(() => console.log("Middle"), 1000); // Executes after 1 second
 console.log("End");
+```
 --------------------------------------------------------------------------------------
 a. Callbacks   
 ------------------------------------------------------------------------------------
@@ -43,13 +46,13 @@ b.Promises
 -------------------------------------------------
 A Promise represents a value that may be available now, in the future, or never.
   Promises make it easier to handle asynchronous tasks and avoid callback hell.
-  
+  ```
 States of a Promise:
 ----------------------
  Pending: Initial state, not fulfilled or rejected.
  Fulfilled: Operation completed successfully.
  Rejected: Operation failed.
-
+```
 -----------------------------------------------------------------------------------------------
 c. Async/Await
 ---------------------------------------------------
